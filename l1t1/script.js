@@ -17,7 +17,8 @@ if (D != 0) {
 	}
 	else {
 		console.log(text_no_roots);
-	}}
+	}
+}
 else {
 	x1 = (-b + D^0.5)/(2*a);
 	console.log(text_one_root+"x="+x1);
