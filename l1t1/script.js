@@ -1,6 +1,6 @@
 var a = 1;
 var b = 2;
-var c = "kk";
+var c = 3;
 var D;
 var x1;
 var x2;
