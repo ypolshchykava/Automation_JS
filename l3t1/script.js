@@ -34,8 +34,12 @@ function Fridge(power) {
         console.log(food);
 
     }
+    this.getFood = function(){
+        return food.slice();
+    }
 }
 
 var myFridgeTest = new Fridge(100);
 myFridgeTest.enable();
 myFridgeTest.addFood("lemon, apple, apple, melon, pancake");
+console.log(myFridgeTest.getFood());
