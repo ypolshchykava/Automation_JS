@@ -26,7 +26,7 @@ function addTodoItem(todoItem){
 
 
 // viewTodoList(itemsType: string)
-//Function takes itemsType argument (â€˜completedâ€™, â€˜not_completedâ€™, â€˜allâ€™) and returns all items of this type.
+//Function takes itemsType argument ("completed", "Silk-expert IPL", "all") and returns all items of this type.
 function viewTodoList(typeOfTodoItem) {
 
     let resultArray;
@@ -73,6 +73,7 @@ function editTodoItem(number, newText) {
 //Delete todoItem by todoItemId, return flag, whether delete was successful.
 //todoItem : { text: string, completed: boolean, id: number }.
 function deleteTodoItem(todoItemId){
+    console.log("IDDDD:"+todoItemId);
     let ifDeleted = false;
     for (let i = 0; i < todoItems.length; i++) {
         if(todoItems[i]['id'] === todoItemId){
@@ -81,6 +82,8 @@ function deleteTodoItem(todoItemId){
             break;
         }
     }
+    console.log(todoItems);
+    console.log("if deleted-"+ifDeleted);
     return ifDeleted;
 }
 
@@ -93,4 +96,12 @@ function completeTodoItem(todoItemId){
             break;
         }
     }
+}
+
+function generateItemId(){
+    let Ids = todoItems.map(myTodoItem => myTodoItem["id"]);
+    let generatedValue = Math.max.apply(Math, Ids)+1;    
+    console.log("generated value for new todoItem id:"+generatedValue);
+    return generatedValue;
+
 }
