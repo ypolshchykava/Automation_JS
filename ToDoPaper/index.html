@@ -14,41 +14,44 @@
 </head>
 
 <body>
-	
-	<h1>My Todo items page</h1>
-	<div id="add-item" class="w3-container">
-	<button type="button" class="btn btn-info" data-toggle="collapse" style="width:200px;height:40px;" data-target="#demo">Add new Todo item</button>
-	<div id="demo" class="collapse">
-	</p>
-	<b>Text:</b>
-	</p>
-    <textarea id="newItemText" rows="4" cols="50"></textarea>	
-    <div class="checkbox">  	
-	</div>
-	<button type="button" id="addNewItem" class="btn btn-info" ${isCompleted} style="width:70px;height:30px;background-color: #4CAF50;">Add</button>
-	</div>
 
-	<br>
-	<br>
-	<br>
-	<div id="viewType">
-		<input type="radio" name="valueType" value="All-values" checked="true"> All<br>
-		<input type="radio" name="valueType" value="Completed"> Completed<br>
-  		<input type="radio" name="valueType" value="Not-Completed"> Non Completed<br>
+<h1>My Todo items page</h1>
+<div id="add-item" class="w3-container">
+    <button type="button" class="btn btn-info" data-toggle="collapse" style="width:200px;height:40px;"
+            data-target="#demo">Add new Todo item
+    </button>
+    <div id="demo" class="collapse">
+        </p>
+        <b>Text:</b>
+        </p>
+        <textarea id="newItemText" rows="4" cols="50"></textarea>
+        <div class="checkbox">
+        </div>
+        <button type="button" id="addNewItem" class="btn btn-info" ${isCompleted}
+                style="width:70px;height:30px;background-color: #4CAF50;">Add
+        </button>
+    </div>
 
-  	</div>
-  	
-    </div></br></br>
-	<ul id="todo-items"> </ul>
-	</div>
-	
+    <br>
+    <br>
+    <br>
+    <div id="viewType">
+        <input type="radio" name="valueType" value="All-values" checked="true"> All<br>
+        <input type="radio" name="valueType" value="Completed"> Completed<br>
+        <input type="radio" name="valueType" value="Not-Completed"> Non Completed<br>
+    </div>
+
+</div>
+</br></br>
+<ul id="todo-items"></ul>
+</div>
+
 </body>
 
-<script src = "jquery-3.3.1.min.js"></script>
-<script  src = "functions.js"> </script>
-<script  src = "script.js"> </script>
-<script  src = "dom.js"> </script>
-
+<script src="jquery-3.3.1.min.js"></script>
+<script src="functions.js"></script>
+<script src="script.js"></script>
+<script src="dom.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
